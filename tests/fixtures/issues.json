@@ -1,0 +1,47 @@
+[
+ {
+  "number": 1,
+  "author": {
+   "login": "alice"
+  },
+  "body": "### Your role\n\nEngineer\n\n### How long have you been coding with agents?\n\n3 to 12 months\n\n### Ask to plan first\n\nUse it, will keep using\n\n### Write detailed specs\n\nUse it, will keep using\n\n### Build a prototype first\n\nHeard of it, want to try\n\n### Show screenshots\n\nUse it, will keep using\n\n### Set up memory files\n\nUse it, will keep using\n\n### Create rollback points while coding\n\nHeard of it, want to try\n\n### Write tests first\n\nUse it, will keep using\n\n### Let it test and fix itself\n\nUse it, will keep using\n\n### Actually read the code\n\nUse it, will keep using\n\n### One agent writes, another reviews\n\nHeard of it, want to try\n\n### Run multiple agents in parallel\n\nHeard of it, want to try\n\n### One git worktree per agent\n\nNever heard of it\n\n### Clear context between tasks\n\nUse it, will keep using\n\n### Run without permission prompts for easy tasks\n\nUse it, will keep using\n\n### Let the agent work while you do other things\n\nHeard of it, want to try\n\n### Choose the model and reasoning level per task\n\nNever heard of it\n\n### Vibe coding\n\nNever heard of it\n\n### Turn every agent mistake into a rule\n\nHeard of it, want to try",
+  "createdAt": "2026-11-01T10:00:00Z",
+  "updatedAt": "2026-11-01T10:00:00Z"
+ },
+ {
+  "number": 2,
+  "author": {
+   "login": "alice"
+  },
+  "body": "### Your role\n\nEngineer\n\n### How long have you been coding with agents?\n\n3 to 12 months\n\n### Ask to plan first\n\nUse it, will keep using\n\n### Write detailed specs\n\nUse it, will keep using\n\n### Build a prototype first\n\nHeard of it, want to try\n\n### Show screenshots\n\nUse it, will keep using\n\n### Set up memory files\n\nUse it, will keep using\n\n### Create rollback points while coding\n\nHeard of it, want to try\n\n### Write tests first\n\nUse it, will keep using\n\n### Let it test and fix itself\n\nUse it, will keep using\n\n### Actually read the code\n\nUse it, will keep using\n\n### One agent writes, another reviews\n\nHeard of it, want to try\n\n### Run multiple agents in parallel\n\nHeard of it, want to try\n\n### One git worktree per agent\n\nNever heard of it\n\n### Clear context between tasks\n\nUse it, will keep using\n\n### Run without permission prompts for easy tasks\n\nUse it, will keep using\n\n### Let the agent work while you do other things\n\nHeard of it, want to try\n\n### Choose the model and reasoning level per task\n\nNever heard of it\n\n### Vibe coding\n\nTried it, would not use again\n\n### Turn every agent mistake into a rule\n\nHeard of it, want to try",
+  "createdAt": "2026-11-10T10:00:00Z",
+  "updatedAt": "2026-11-10T10:00:00Z"
+ },
+ {
+  "number": 3,
+  "author": {
+   "login": "bob"
+  },
+  "body": "### Your role\n\nTech lead\n\n### How long have you been coding with agents?\n\nMore than a year\n\n### Ask to plan first\n\nUse it, will keep using\n\n### Write detailed specs\n\nUse it, will keep using\n\n### Build a prototype first\n\nUse it, will keep using\n\n### Show screenshots\n\nUse it, will keep using\n\n### Set up memory files\n\nUse it, will keep using\n\n### Create rollback points while coding\n\nUse it, will keep using\n\n### Write tests first\n\nUse it, will keep using\n\n### Let it test and fix itself\n\nUse it, will keep using\n\n### Actually read the code\n\nUse it, will keep using\n\n### One agent writes, another reviews\n\nUse it, will keep using\n\n### Run multiple agents in parallel\n\nUse it, will keep using\n\n### One git worktree per agent\n\nUse it, will keep using\n\n### Clear context between tasks\n\nUse it, will keep using\n\n### Run without permission prompts for easy tasks\n\nUse it, will keep using\n\n### Let the agent work while you do other things\n\nUse it, will keep using\n\n### Choose the model and reasoning level per task\n\nUse it, will keep using\n\n### Vibe coding\n\nHeard of it, not interested\n\n### Turn every agent mistake into a rule\n\nUse it, will keep using",
+  "createdAt": "2026-11-02T10:00:00Z",
+  "updatedAt": "2026-11-02T10:00:00Z"
+ },
+ {
+  "number": 4,
+  "author": {
+   "login": "carol"
+  },
+  "body": "### Your role\n\nEngineer\n\n### How long have you been coding with agents?\n\nMore than a year\n\n### Ask to plan first\n\nUse it, will keep using\n\n### Write detailed specs\n\nHeard of it, want to try\n\n### Build a prototype first\n\nUse it, will keep using\n\n### Show screenshots\n\nHeard of it, not interested\n\n### Set up memory files\n\nUse it, will keep using\n\n### Create rollback points while coding\n\nTried it, would not use again\n\n### Write tests first\n\nUse it, will keep using\n\n### Let it test and fix itself\n\nUse it, will keep using\n\n### Actually read the code\n\nUse it, will keep using\n\n### One agent writes, another reviews\n\nUse it, will keep using\n\n### Run multiple agents in parallel\n\nUse it, will keep using\n\n### One git worktree per agent\n\nUse it, will keep using\n\n### Clear context between tasks\n\nUse it, will keep using\n\n### Run without permission prompts for easy tasks\n\nUse it, will keep using\n\n### Let the agent work while you do other things\n\nUse it, will keep using\n\n### Choose the model and reasoning level per task\n\nHeard of it, not interested\n\n### Vibe coding\n\nTried it, would not use again\n\n### Turn every agent mistake into a rule\n\nHeard of it, want to try",
+  "createdAt": "2026-11-03T10:00:00Z",
+  "updatedAt": "2026-11-03T10:00:00Z"
+ },
+ {
+  "number": 5,
+  "author": {
+   "login": "dave"
+  },
+  "body": "### Your role\n\nEngineering manager\n\n### How long have you been coding with agents?\n\nLess than 3 months\n\n### Ask to plan first\n\nHeard of it, want to try\n\n### Write detailed specs\n\nNever heard of it\n\n### Build a prototype first\n\nHeard of it, want to try\n\n### Show screenshots\n\nNever heard of it\n\n### Set up memory files\n\nHeard of it, want to try\n\n### Create rollback points while coding\n\nNever heard of it\n\n### Write tests first\n\nHeard of it, want to try\n\n### Let it test and fix itself\n\nHeard of it, want to try\n\n### Actually read the code\n\nHeard of it, want to try\n\n### One agent writes, another reviews\n\nNever heard of it\n\n### Run multiple agents in parallel\n\nNever heard of it\n\n### One git worktree per agent\n\nNever heard of it\n\n### Clear context between tasks\n\nHeard of it, want to try\n\n### Run without permission prompts for easy tasks\n\nHeard of it, want to try\n\n### Let the agent work while you do other things\n\nNever heard of it\n\n### Choose the model and reasoning level per task\n\nNever heard of it\n\n### Vibe coding\n\nHeard of it, not interested\n\n### Turn every agent mistake into a rule\n\nNever heard of it",
+  "createdAt": "2026-11-04T10:00:00Z",
+  "updatedAt": "2026-11-04T10:00:00Z"
+ }
+]
