@@ -1,0 +1,125 @@
+# Team survey of agentic coding practices.
+# Edit the list below to fit your team, then push: a workflow regenerates the issue form.
+# Answers are GitHub issues in this repository, so everyone with access sees who answered what.
+
+version: 1
+title: "State of Agentic Practices: team survey"
+intro: >-
+  For each practice, pick the answer that is true for you today.
+  There are no right answers: the point is to see where the team actually is.
+  Answers are visible to everyone with access to this repository.
+
+# When the results open. Until then REPORT.md shows only how many people answered,
+# so early answers do not steer later ones. Results open on closes_on, or earlier
+# once team_size people have answered. Set both before sending the link.
+closes_on: 2026-12-01     # YYYY-MM-DD
+team_size: 12             # how many people you expect to answer; leave empty if unsure
+
+# Shown at the top of the form. About 10 seconds per question.
+seconds_per_question: 10
+
+# Answer scale, the same for every practice (same idea as the State of JS survey).
+scale:
+  - id: never_heard
+    label: Never heard of it
+  - id: not_interested
+    label: Heard of it, not interested
+  - id: want_to_try
+    label: Heard of it, want to try
+  - id: dropped
+    label: Tried it, would not use again
+  - id: using
+    label: Use it, will keep using
+
+# A few questions about context, so the results can be read in context.
+context:
+  - id: role
+    label: Your role
+    options: [Engineer, Tech lead, Engineering manager, Designer or product, Other]
+  - id: agent_experience
+    label: How long have you been coding with agents?
+    options: [Not yet, Less than 3 months, 3 to 12 months, More than a year]
+
+# Practices to ask about. Source: the Agentic Coding Reference (coding-with-ai.dev).
+practices:
+  - id: plan-first-before-coding
+    stage: Planning
+    title: Ask to plan first
+    definition: Tell the agent to outline steps, risks and quick tests before touching code, so you can review and adjust the approach.
+  - id: specification-driven-development
+    stage: Planning
+    title: Write detailed specs
+    definition: Give the agent a comprehensive spec; even a conversational spec beats vague instructions.
+  - id: prototype-first-development
+    stage: UI and prototype
+    title: Build a prototype first
+    definition: Start with a quick generated prototype to prove the idea can work.
+  - id: visual-iteration-technique
+    stage: UI and prototype
+    title: Show screenshots
+    definition: Drop screenshots of the result into the chat, compare with the goal, repeat.
+  - id: contextual-documentation
+    stage: Coding
+    title: Set up memory files
+    definition: Keep context files (CLAUDE.md, AGENTS.md and similar) that guide the agent about the project's structure, standards and preferences.
+  - id: checkpoint-save-states
+    stage: Coding
+    title: Create rollback points while coding
+    definition: Capture known-good states before risky changes, so you can revert when an experiment fails.
+  - id: test-driven-development-ai
+    stage: Testing
+    title: Write tests first
+    definition: Write tests first, confirm they fail, then let the agent implement until they pass.
+  - id: ai-feedback-loops
+    stage: Debugging
+    title: Let it test and fix itself
+    definition: Set up tools so the agent makes changes, runs tests, sees what fails and tries again on its own.
+  - id: critical-code-review-strategy
+    stage: Review
+    title: Actually read the code
+    definition: Stop and inspect what the agent wrote, line by line, before accepting it.
+  - id: multi-agent-verification
+    stage: Review
+    title: One agent writes, another reviews
+    definition: Have one agent write the code, then use a fresh agent to review it and find problems.
+  - id: run-multiple-agents-parallel
+    stage: Across stages
+    title: Run multiple agents in parallel
+    definition: Run several agents at once on separate tasks instead of waiting for one to finish.
+  - id: worktree
+    stage: Across stages
+    title: One git worktree per agent
+    definition: Give each parallel agent its own git worktree, so agents never share a working directory.
+  - id: clear-context-between-tasks
+    stage: Across stages
+    title: Clear context between tasks
+    definition: Reset the agent's context between unrelated tasks instead of continuing one long session.
+  - id: run-without-permissions
+    stage: Across stages
+    title: Run without permission prompts for easy tasks
+    definition: Let the agent act without asking for each step when the task is simple enough that you would accept every change anyway.
+  - id: async-agent-work
+    stage: Across stages
+    title: Let the agent work while you do other things
+    definition: Hand a task to the agent and work on something else while it runs.
+  - id: choose-right-model-for-the-task
+    stage: Across stages
+    title: Choose the model and reasoning level per task
+    definition: Before a task, pick the model and how much it should think, instead of always using the default.
+  - id: vibe-coding
+    stage: Across stages
+    title: Vibe coding
+    definition: Build by talking to an agent without reading the code; every change is accepted and errors are pasted back until it works.
+  - id: error-to-rule-ratchet
+    stage: Across stages
+    title: Turn every agent mistake into a rule
+    definition: When the agent makes a mistake, add a check (lint rule, hook, test, instruction) that makes the same mistake impossible next time.
+
+# How the report groups practices for the team. The rule is printed in the report, next to the raw counts.
+report:
+  min_answers: 3          # a practice is grouped only when at least this many people answered it
+  adopt_using: 0.5        # Adopt: at least half use it and will keep using
+  hold_dropped: 0.25      # Hold: at least a quarter tried it and would not use it again
+  trial_interest: 0.5     # Trial: using + want to try is at least half
+  assess_heard: 0.5       # Assess: at least half have heard of it
+  split_share: 0.25       # "Where the team splits": at least this share uses it AND this share never heard of it

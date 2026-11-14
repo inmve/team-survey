@@ -1,0 +1,27 @@
+name: Build survey form
+
+on:
+  push:
+    paths: [survey.yml, scripts/build_form.py]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  form:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install pyyaml==6.0.2
+      - run: python scripts/build_form.py
+      - name: Commit the form
+        run: |
+          git config user.name "survey-form"
+          git config user.email "survey-form@users.noreply.github.com"
+          git add .github/ISSUE_TEMPLATE/survey.yml
+          git diff --cached --quiet || git commit -m "Rebuild survey form from survey.yml"
+          git push

@@ -1,0 +1,188 @@
+# Generated from survey.yml by scripts/build_form.py. Edit survey.yml, not this file.
+name: "State of Agentic Practices: team survey"
+description: "One answer per person. You can edit your issue later to update your answers."
+title: "Survey answers"
+labels: ["survey"]
+body:
+  - type: markdown
+    attributes:
+      value: "**Takes about 4 minutes.** Results open on 1 December 2026, or earlier once all 12 people have answered.\n\nFor each practice, pick the answer that is true for you today. There are no right answers: the point is to see where the team actually is. Answers are visible to everyone with access to this repository."
+  - type: dropdown
+    id: "context-role"
+    attributes:
+      label: "Your role"
+      options: ["Engineer", "Tech lead", "Engineering manager", "Designer or product", "Other"]
+    validations:
+      required: true
+  - type: dropdown
+    id: "context-agent_experience"
+    attributes:
+      label: "How long have you been coding with agents?"
+      options: ["Not yet", "Less than 3 months", "3 to 12 months", "More than a year"]
+    validations:
+      required: true
+  - type: markdown
+    attributes:
+      value: "### Planning"
+  - type: dropdown
+    id: "plan-first-before-coding"
+    attributes:
+      label: "Ask to plan first"
+      description: "Tell the agent to outline steps, risks and quick tests before touching code, so you can review and adjust the approach."
+      options: ["Never heard of it", "Heard of it, not interested", "Heard of it, want to try", "Tried it, would not use again", "Use it, will keep using"]
+    validations:
+      required: true
+  - type: dropdown
+    id: "specification-driven-development"
+    attributes:
+      label: "Write detailed specs"
+      description: "Give the agent a comprehensive spec; even a conversational spec beats vague instructions."
+      options: ["Never heard of it", "Heard of it, not interested", "Heard of it, want to try", "Tried it, would not use again", "Use it, will keep using"]
+    validations:
+      required: true
+  - type: markdown
+    attributes:
+      value: "### UI and prototype"
+  - type: dropdown
+    id: "prototype-first-development"
+    attributes:
+      label: "Build a prototype first"
+      description: "Start with a quick generated prototype to prove the idea can work."
+      options: ["Never heard of it", "Heard of it, not interested", "Heard of it, want to try", "Tried it, would not use again", "Use it, will keep using"]
+    validations:
+      required: true
+  - type: dropdown
+    id: "visual-iteration-technique"
+    attributes:
+      label: "Show screenshots"
+      description: "Drop screenshots of the result into the chat, compare with the goal, repeat."
+      options: ["Never heard of it", "Heard of it, not interested", "Heard of it, want to try", "Tried it, would not use again", "Use it, will keep using"]
+    validations:
+      required: true
+  - type: markdown
+    attributes:
+      value: "### Coding"
+  - type: dropdown
+    id: "contextual-documentation"
+    attributes:
+      label: "Set up memory files"
+      description: "Keep context files (CLAUDE.md, AGENTS.md and similar) that guide the agent about the project's structure, standards and preferences."
+      options: ["Never heard of it", "Heard of it, not interested", "Heard of it, want to try", "Tried it, would not use again", "Use it, will keep using"]
+    validations:
+      required: true
+  - type: dropdown
+    id: "checkpoint-save-states"
+    attributes:
+      label: "Create rollback points while coding"
+      description: "Capture known-good states before risky changes, so you can revert when an experiment fails."
+      options: ["Never heard of it", "Heard of it, not interested", "Heard of it, want to try", "Tried it, would not use again", "Use it, will keep using"]
+    validations:
+      required: true
+  - type: markdown
+    attributes:
+      value: "### Testing"
+  - type: dropdown
+    id: "test-driven-development-ai"
+    attributes:
+      label: "Write tests first"
+      description: "Write tests first, confirm they fail, then let the agent implement until they pass."
+      options: ["Never heard of it", "Heard of it, not interested", "Heard of it, want to try", "Tried it, would not use again", "Use it, will keep using"]
+    validations:
+      required: true
+  - type: markdown
+    attributes:
+      value: "### Debugging"
+  - type: dropdown
+    id: "ai-feedback-loops"
+    attributes:
+      label: "Let it test and fix itself"
+      description: "Set up tools so the agent makes changes, runs tests, sees what fails and tries again on its own."
+      options: ["Never heard of it", "Heard of it, not interested", "Heard of it, want to try", "Tried it, would not use again", "Use it, will keep using"]
+    validations:
+      required: true
+  - type: markdown
+    attributes:
+      value: "### Review"
+  - type: dropdown
+    id: "critical-code-review-strategy"
+    attributes:
+      label: "Actually read the code"
+      description: "Stop and inspect what the agent wrote, line by line, before accepting it."
+      options: ["Never heard of it", "Heard of it, not interested", "Heard of it, want to try", "Tried it, would not use again", "Use it, will keep using"]
+    validations:
+      required: true
+  - type: dropdown
+    id: "multi-agent-verification"
+    attributes:
+      label: "One agent writes, another reviews"
+      description: "Have one agent write the code, then use a fresh agent to review it and find problems."
+      options: ["Never heard of it", "Heard of it, not interested", "Heard of it, want to try", "Tried it, would not use again", "Use it, will keep using"]
+    validations:
+      required: true
+  - type: markdown
+    attributes:
+      value: "### Across stages"
+  - type: dropdown
+    id: "run-multiple-agents-parallel"
+    attributes:
+      label: "Run multiple agents in parallel"
+      description: "Run several agents at once on separate tasks instead of waiting for one to finish."
+      options: ["Never heard of it", "Heard of it, not interested", "Heard of it, want to try", "Tried it, would not use again", "Use it, will keep using"]
+    validations:
+      required: true
+  - type: dropdown
+    id: "worktree"
+    attributes:
+      label: "One git worktree per agent"
+      description: "Give each parallel agent its own git worktree, so agents never share a working directory."
+      options: ["Never heard of it", "Heard of it, not interested", "Heard of it, want to try", "Tried it, would not use again", "Use it, will keep using"]
+    validations:
+      required: true
+  - type: dropdown
+    id: "clear-context-between-tasks"
+    attributes:
+      label: "Clear context between tasks"
+      description: "Reset the agent's context between unrelated tasks instead of continuing one long session."
+      options: ["Never heard of it", "Heard of it, not interested", "Heard of it, want to try", "Tried it, would not use again", "Use it, will keep using"]
+    validations:
+      required: true
+  - type: dropdown
+    id: "run-without-permissions"
+    attributes:
+      label: "Run without permission prompts for easy tasks"
+      description: "Let the agent act without asking for each step when the task is simple enough that you would accept every change anyway."
+      options: ["Never heard of it", "Heard of it, not interested", "Heard of it, want to try", "Tried it, would not use again", "Use it, will keep using"]
+    validations:
+      required: true
+  - type: dropdown
+    id: "async-agent-work"
+    attributes:
+      label: "Let the agent work while you do other things"
+      description: "Hand a task to the agent and work on something else while it runs."
+      options: ["Never heard of it", "Heard of it, not interested", "Heard of it, want to try", "Tried it, would not use again", "Use it, will keep using"]
+    validations:
+      required: true
+  - type: dropdown
+    id: "choose-right-model-for-the-task"
+    attributes:
+      label: "Choose the model and reasoning level per task"
+      description: "Before a task, pick the model and how much it should think, instead of always using the default."
+      options: ["Never heard of it", "Heard of it, not interested", "Heard of it, want to try", "Tried it, would not use again", "Use it, will keep using"]
+    validations:
+      required: true
+  - type: dropdown
+    id: "vibe-coding"
+    attributes:
+      label: "Vibe coding"
+      description: "Build by talking to an agent without reading the code; every change is accepted and errors are pasted back until it works."
+      options: ["Never heard of it", "Heard of it, not interested", "Heard of it, want to try", "Tried it, would not use again", "Use it, will keep using"]
+    validations:
+      required: true
+  - type: dropdown
+    id: "error-to-rule-ratchet"
+    attributes:
+      label: "Turn every agent mistake into a rule"
+      description: "When the agent makes a mistake, add a check (lint rule, hook, test, instruction) that makes the same mistake impossible next time."
+      options: ["Never heard of it", "Heard of it, not interested", "Heard of it, want to try", "Tried it, would not use again", "Use it, will keep using"]
+    validations:
+      required: true
