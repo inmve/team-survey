@@ -14,6 +14,7 @@ A ready-made survey for your engineering team: which agentic coding practices pe
 
 1. Click **Use this template → Create a new repository**. Choose your organization as the owner and **Private** as the visibility.
 2. In the new repository: **Settings → Actions → General → Workflow permissions → Read and write permissions** → Save. The workflows need this to commit the report.
+   Then open **Actions → Build survey form → Run workflow** once. It creates the `survey` label (a repository made from a template does not get the template's labels, and the report finds answers by this label).
 3. Edit `survey.yml`: set `closes_on` (when results open) and `team_size` (results open earlier once that many people answered). Optional: remove practices you don't care about, add your own (id, stage, title, definition). On push, a workflow rebuilds the form, including the time estimate at the top.
 4. Send the team this link: `https://github.com/<owner>/<repo>/issues/new?template=survey.yml`
 5. Open `REPORT.md`. It is rebuilt after every answer and once a day; it shows the full results from the closing date.
