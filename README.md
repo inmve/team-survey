@@ -56,4 +56,4 @@ The report always shows the full distribution of the five answers. On top of tha
 
 A repository created from a template does not receive later changes. Compare `version` in your `survey.yml` with this template and copy what you need.
 
-Practices and definitions come from the Agentic Coding Reference on coding-with-ai.dev.
+Practices and definitions come from the [software practices reference](https://github.com/inmve/awesome-ai-coding-techniques) ([site](https://inmve.github.io/software-practices/)).

@@ -40,7 +40,7 @@ context:
     label: How long have you been coding with agents?
     options: [Not yet, Less than 3 months, 3 to 12 months, More than a year]
 
-# Practices to ask about. Source: the Agentic Coding Reference (coding-with-ai.dev).
+# Practices to ask about. Source: the software practices reference (github.com/inmve/awesome-ai-coding-techniques).
 practices:
   - id: plan-first-before-coding
     stage: Planning
