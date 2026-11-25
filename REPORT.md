@@ -5,4 +5,4 @@
 Until then this report shows only the number of answers, so that early answers do not steer later ones.
 Answers themselves are issues in this repository and visible to the team: please answer before reading other people's issues.
 
-Updated 2026-11-24.
+Updated 2026-11-25.
